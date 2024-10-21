@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Poetry House</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0e4d7;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            color: #af824c;
+            margin-bottom: 30px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        form {
+            max-width: 600px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        label {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.2rem;
+            background-color: #af824c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #8b8080;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #8b8080;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #73bad6;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            form {
+                padding: 15px;
+            }
+
+            input, textarea {
+                font-size: 1rem;
+            }
+
+            button {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contact Us</h1>
+
+    <form action="submit_contact.php" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <a href="file:///D:/Internet%20and%20web%20lab/homepage.html" class="back-btn">Back to Homepage</a>
+
+</body>
+</html>
